@@ -1,0 +1,43 @@
+adicionarProduto
+
+Esta função adiciona um novo produto ao estoque:
+
+    Solicita o nome, preço e quantidade do produto ao usuário.
+    Atribui automaticamente um ID baseado na quantidade de produtos já cadastrados.
+    Define o status como 'A' (ativo).
+    Atualiza a quantidade total de produtos no estoque.
+
+exibirProdutos
+
+Exibe todos os produtos ativos no estoque:
+
+    Percorre a lista de produtos e imprime apenas aqueles com status 'A'.
+    Exibe o ID, nome, preço, quantidade e status.
+
+calcularValorTotal
+
+Calcula o valor total do estoque com base nos produtos ativos:
+
+    Soma o valor total de cada produto (preço multiplicado pela quantidade).
+    Considera apenas produtos com status 'A'.
+
+salvarProdutos
+
+Salva os dados dos produtos em um arquivo chamado produtos.txt:
+
+    Grava os detalhes de cada produto (ID, nome, preço, quantidade e status) no arquivo.
+    Pode ser usado para preservar os dados dos produtos entre execuções do programa.
+
+alterarProduto
+
+Permite alterar as informações de um produto ativo:
+
+    O usuário fornece o ID do produto que deseja alterar.
+    Caso o produto esteja ativo, ele pode modificar o nome, preço e quantidade.
+
+eliminarProduto
+
+Elimina um produto, alterando seu status para 'D':
+
+    O usuário fornece o ID do produto que deseja eliminar.
+    Se o produto estiver ativo, seu status é alterado para 'D', o que significa "eliminado". Esse produto não será mais exibido, mas os dados permanecem no sistema.
